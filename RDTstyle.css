@@ -7,6 +7,10 @@ footer, nav {
 footer, nav h1{
     color: white;
 }
+p{
+    line-height: 1.5;
+    margin: 10px;
+}
 nav h2{
     color: white;
 }
@@ -18,10 +22,10 @@ main h1{
 }
 .content-block{
     background-color: rgb(29, 48, 48);
-    height: 150px;
+    height: 180px;
 }
 .double{
-    height: 300px;
+    height: 360px;
 }
 .content-block p{
     color: white;
@@ -47,6 +51,9 @@ main h1{
 .three-two{
     background-color: #5d7e95;
 }
+.four-one .row{
+    background-color: #f98d29;
+}
 .five-one{
     background-color: #f98d29;
 }
@@ -59,12 +66,18 @@ main h1{
 .six-one{
     background-color: white;
 }
+.six-one .row{
+    background-color: #f98d29;
+}
+#date-block{
+    background-color: white;
+}
 .date-block{
     background-color: #425363;
     height: 60px;
     width: 60px;
     position: relative;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
   }
   .date-block h3{
     font-family: archivo;
@@ -74,8 +87,8 @@ main h1{
     line-height: 0px;
     margin: 0px;
     position: absolute;
-    right: 2px;
-    top: 30px;
+    right: 3px;
+    bottom: 30px;
   
   }
   .date-block p{
@@ -85,6 +98,13 @@ main h1{
     line-height: 0px;
     position: absolute;
     font-size: 15px;
-    right: 2px;
-    top: 50px;
+    right: -6px;
+    bottom: 0px;
   }
+#event-details{
+    background-color: white;
+}
+#event-details p{
+    line-height: .8;
+    color: black;
+}
