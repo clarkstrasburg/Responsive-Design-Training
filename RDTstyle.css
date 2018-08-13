@@ -1,0 +1,90 @@
+body{
+    background-color: #ffffff;
+}
+footer, nav {
+    background-color: rgb(29, 48, 48);  
+}
+footer, nav h1{
+    color: white;
+}
+nav h2{
+    color: white;
+}
+main{
+    background-color: white;
+}
+main h1{
+    color:  rgb(29, 48, 48);
+}
+.content-block{
+    background-color: rgb(29, 48, 48);
+    height: 150px;
+}
+.double{
+    height: 300px;
+}
+.content-block p{
+    color: white;
+}
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+.one-one{
+    background-color: #c9c8c7;
+}
+.one-two{
+    background-color: #c9c8c7;
+}
+.two-two{
+    background-color: #003da7;
+}
+.three-one{
+    background-color: #425363;
+}
+.three-two{
+    background-color: #5d7e95;
+}
+.five-one{
+    background-color: #f98d29;
+}
+.five-two{
+    background-color: #003da7;
+}
+.five-three{
+    background-color: #768591;
+}
+.six-one{
+    background-color: white;
+}
+.date-block{
+    background-color: #425363;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    margin: 10px;
+  }
+  .date-block h3{
+    font-family: archivo;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    line-height: 0px;
+    margin: 0px;
+    position: absolute;
+    right: 2px;
+    top: 25px;
+  
+  }
+  .date-block p{
+    font-family: archivo;
+    color: white;
+    text-align: right;
+    line-height: 0px;
+    position: absolute;
+    font-size: 15px;
+    right: 2px;
+    top: 33px;
+  }
