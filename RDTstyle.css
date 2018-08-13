@@ -75,7 +75,7 @@ main h1{
     margin: 0px;
     position: absolute;
     right: 2px;
-    top: 25px;
+    top: 30px;
   
   }
   .date-block p{
@@ -86,5 +86,5 @@ main h1{
     position: absolute;
     font-size: 15px;
     right: 2px;
-    top: 33px;
+    top: 50px;
   }
