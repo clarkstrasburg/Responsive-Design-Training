@@ -6,146 +6,358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
     <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="RDTstyle.css" />
 </head>
 <body>
-    <header class="container-fluid">
+
+    <!***Header***>
+    <header class="container">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row" id="header-content-one">
+                <div class="col-md-3">
                     <h1>LOGO</h1>
-                </div>
-                <div class="col-md-6">
-                    <p>search and nav</p>
+                </div>   
+                <div class="col-md-9 search-and-nav">
+                    <div class="row" id="header-content-two">
+                        <div class="search-bar">
+                            <div class="form-block">
+                                <form id="search-text">
+                                    <input type="text" placeholder="  Search" name="search" id="search">
+                                    <button type="submit" id="search-button"><p>Go</p></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row icons">
+                            <div class="quick-icon">
+                                <i class="fas fa-user"></i>
+                                <p>directors</p>
+                            </div>
+                            <div class="quick-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>locations</p>
+                            </div>
+                            <div class="quick-icon">
+                                <i class="fas fa-clock"></i>
+                                <p>enter time</p>
+                            </div>
+                            <div class="quick-icon">
+                                <i class="fas fa-plane-departure"></i>
+                                <p>travel</p>
+                            </div>
+                            <div class="quick-icon">
+                                <i class="fas fa-file-alt"></i>
+                                <p>forms</p>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>
     </header>
-    <nav class="container-fluid">
-        <h2>NAVIGATION</h2>
-    </nav>
+
+    <!***Body Content***>
+        <nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+            <div class="container navbar-content">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><h4>Departments</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><h4>Tools</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><h4>Associate Center</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><h4>Project Delivery</h4></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div class="container">
         <div class="row-eq-height"> 
-            <div class= "col-md-4" > <!Grey "latest news" blocks>
-                <div class="col-md-12 content-block one-one">
-                    <p>container 1.1</p>
+            <div class= "col-md-4 content-grid" > 
+                <div class="col-md-12 content-block one-one non-image">
+                    <h3 class="alternate">Market News</h3>
+                    <ul>
+                        <li><a class="article-link" href="#">Student Housing Heats Up In St. Louis</a></li>
+                        <li><a class="article-link" href="#">Company Selected as Developer for Seven</a></li>
+                        <li><a class="article-link" href="#">Minneapolis Leaders Welcome Downtown</a></li>
+                    </ul>
+                    <a href="#"><p class="read-more">+ view more</p></a>
                 </div>
-                <div class="col-md-12 content-block one-two">
-                    <p>container 1.2</p>
+                <div class="col-md-12 content-block one-two non-image">
+                    <h3 class="alternate">Announcements</h3>
+                    <ul>
+                        <li><a class="article-link" href="#">Student Housing Heats Up In St. Louis</a></li>
+                        <li><a class="article-link" href="#">Company Selected as Developer for Seven</a></li>
+                        <li><a class="article-link" href="#">Minneapolis Leaders Welcome Downtown</a></li>
+                    </ul>
+                    <a href="#"><p class="read-more">+ view more</p></a>
                 </div>
             </div>
-            <div class= "col-md-4"><!"Company News" block>
-                <div class="col-md-12 content-block two-one">
-                    <p>container 2</p>
-                </div>
-                <div class="col-md-12 content-block two-two">
-                    <p>container 2.2</p>
+            <div class= "col-md-4 content-grid"><!"Company News" block>
+                <div class="col-md-12 content-block double two-one">
+                    <div class="row" id="company-news-double">
+                        <div class="col-md-12" >
+                            <img src="assets/tile-lg.jpg" class="img-fluid" width="100%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Company News</h5>
+                            <p>Miltary Service Provided Excellent Professional Training for Company Employee</p>
+                            <p class="meta-date">12/12/15</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class= "col-md-4" > <!Smaller "Company News" blocks>
+            <div class= "col-md-4 content-grid" > <!Smaller "Company News" blocks>
                 <div class="col-md-12 content-block three-one">
-                    <p>container 3.1</p>
+                    <div class="row" id="company-news">
+                        <div class="col-md-5">
+                            <img src="assets/tile-md.jpg" class="img-fluid" width="100%">
+                        </div>
+                        <div class="col-md-7">
+                            <h5>Company News</h5>
+                            <h6>Tile Title Element</h6>
+                            <p class="meta-date">12/25/01</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-12 content-block three-two">
-                    <p>container 3.2</p>
+                    <div class="row" id="company-news">
+                        <div class="col-md-5">
+                            <img src="assets/tile-md.jpg" class="img-fluid" width="100%">
+                        </div>
+                        <div class="col-md-7">
+                            <h5>Company News</h5>
+                            <h6>Tile Title Element</h6>
+                            <p class="meta-date">12/25/01</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row-eq-height">
-
-            <div class= "col-md-4"> <!Recently added blocks>
+            <div class= "col-md-4 content-grid"> <!Recently Signed blocks>
                 <div class="col-md-12 content-block double four-one">
-                    <div class="row">
-                        <p>container 4</p>
+                    <div class="row floating-title">
+                        <h5 class="floating-title-text">Recently Signed</h5>
                     </div>
-                </div>
-            </div>
-
-            <div class= "col-md-4"> <!CEO's corner section>
-                <div class="col-md-12 content-block five-one">
-                    <p>container 5.1</p>
-                </div>
-                    <div class="container">
-                        <div class="row">
-                        <div class="col-md-6 content-block five-two">
-                            <p>5.2</p>
+                    <div class="row recently-signed">
+                        <div class="col-md-3">
+                            <img src="assets/warehouse.jpg" class="img-fluid" width="100%">
                         </div>
-                        <div class="col-md-6 content-block five-three">
-                                <p>5.3</p>
-                        </div>  
+                        <div class="col-md-9 details">
+                            <p class="details-one">Character Communications</p>
+                            <p class="details-two">12/24/2014</p>
+                            <p class="details-three">Minneapolis/St. Paul</p>
+                        </div>
                     </div>
-                </div>               
+                    <div class="row recently-signed">
+                        <div class="col-md-3">
+                            <img src="assets/warehouse.jpg" class="img-fluid" width="100%">
+                        </div>
+                        <div class="col-md-9 details">
+                            <p class="details-one">Character Communications</p>
+                            <p class="details-two">12/24/2014</p>
+                            <p class="details-three">Minneapolis/St. Paul</p>
+                        </div>
+                    </div>
+                    <div class="row recently-signed">
+                        <div class="col-md-3">
+                            <img src="assets/warehouse.jpg" class="img-fluid" width="100%">
+                        </div>
+                        <div class="col-md-9 details">
+                            <p class="details-one">Character Communications</p>
+                            <p class="details-two">12/24/2014</p>
+                            <p class="details-three">Minneapolis/St. Paul</p>
+                        </div>
+                    </div>
+                    <div class="row recently-signed">
+                        <div class="col-md-3">
+                            <img src="assets/warehouse.jpg" class="img-fluid" width="100%">
+                        </div>
+                        <div class="col-md-9 details">
+                            <p class="details-one">Character Communications</p>
+                            <p class="details-two">12/24/2014</p>
+                            <p class="details-three">Minneapolis/St. Paul</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class= "col-md-4"> <!upcoming events block> 
-                <div class="col-md-12 content-block double six-one">
-                    <div class="row">
-                        <h5>Upcoming Events</h5>
+            <div class= "col-md-4 content-grid"> <!CEO's corner section>
+                <div class="col-md-12 content-block five-one">
+                    <div class="row" id="ceo-corner">
+                        <div class="col-md-5">
+                            <img src="assets/tile-md.jpg" class="img-fluid" width="100%">
+                        </div>
+                        <div class="col-md-7">
+                            <h5>CEO's Corner</h5>
+                            <h6>Tile Title Element</h6>
+                            <p class="meta-date">12/25/01</p>
+                        </div>
                     </div>
-                    <div class="row"> 
-                        <div class="col-md-3" id="date-block">
+                </div>
+                <div class="col-md-12 content-block five-two">
+                    <div class="content-block-half five-three">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="assets/tile-lg.jpg" class="img-fluid" width="100%">
+                                </div>
+                                <p class="title-small">The Latest News and Buzz on Company Projects</p>
+                                <p class="meta-date">12/25/01</p>
+                            </div>                                            
+                    </div>
+                    <div class="content-block-half five-four">
+               
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="assets/tile-lg.jpg" class="img-fluid" width="100%">
+                                </div>
+                                <p class="title-small">The Latest News and Buzz on Company Projects</p>
+                                <p class="meta-date">12/25/01</p>
+                            </div>                                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 content-grid"> <!upcoming events block> 
+                <div class="col-md-12 content-block double six-one">
+                    <div class="row floating-title">
+                        <h5 class="floating-title-text">Upcoming Events</h5>
+                    </div>
+                    <div class="row upcoming-events"> 
+                        <div class="col-md-2" id="date-block">
                             <div class="date-block">
                                 <h3>24</h3>
                                 <p>NOV</p>    
                             </div>
                         </div>
-                        <div class="col-md-9" id="event-details">
-                            <p>event name</p>
-                            <p>event time</p>
-                            <p>Minneapolis, MN</p>
+                        <div class="col-md-10 details event-details">
+                            <p class="details-one">Event Title Celebration Gala</p>
+                            <p class="details-two">8:00pm-8:00pm</p>
+                            <p class="details-three">Minneapolis, MN</p>
                         </div>    
                     </div>            
-                    <div class="row"> 
-                        <div class="col-md-3" id="date-block">
+                    <div class="row upcoming-events"> 
+                        <div class="col-md-2" id="date-block">
                             <div class="date-block">
                                 <h3>24</h3>
                                 <p>NOV</p>    
                             </div>
                         </div>
-                        <div class="col-md-9" id="event-details">
-                            <p>event name</p>
-                            <p>event time</p>
-                            <p>Minneapolis, MN</p>
+                        <div class="col-md-10 details event-details">
+                            <p class="details-one">Event Title Celebration Gala</p>
+                            <p class="details-two">8:00pm-8:00pm</p>
+                            <p class="details-three">Minneapolis, MN</p>
                         </div>                
                     </div>
-                    <div class="row"> 
-                            <div class="col-md-3" id="date-block">
-                                <div class="date-block">
-                                    <h3>24</h3>
-                                    <p>NOV</p>    
+                    <div class="row upcoming-events"> 
+                        <div class="col-md-2" id="date-block">
+                            <div class="date-block">
+                                <h3>24</h3>
+                                <p>NOV</p>    
+                            </div>
+                        </div>
+                        <div class="col-md-10 details event-details">
+                            <p class="details-one">Event Title Celebration Gala</p>
+                            <p class="details-two">8:00pm-8:00pm</p>
+                            <p class="details-three">Minneapolis, MN</p>
+                        </div>    
+                    </div>            
+                    <div class="row upcoming-events"> 
+                        <div class="col-md-2" id="date-block">
+                            <div class="date-block">
+                                <h3>24</h3>
+                                <p>NOV</p>    
+                            </div>
+                        </div>
+                        <div class="col-md-10 details event-details">
+                            <p class="details-one">Event Title Celebration Gala</p>
+                            <p class="details-two">8:00pm-8:00pm</p>
+                            <p class="details-three">Minneapolis, MN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!***Footer***>
+    <footer>
+        <div class="container skyline-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>links and stuff</p>
+                </div>
+                <div class="col-md-6">
+                   <img src="assets/minneapolis_skyline_5415.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="skyline-extender">
+
+        </div>
+        <div class="footer-links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Departments</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Information Technology</li>
+                                    <li>Accounting</li>
+                                    <li >Marketing</li>
+                                    <li>Risk</li>
+                                    <li>Real Estate</li>
+                                    <li>OPL</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Associate Center</li>
+                                    <li>Legal</li>
+                                    <li>Construction</li>
+                                    <li>Company AE</li>
+                                    <li>Forms</li>
+                                    <li>Facilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Technical Support</h5>
+                                    <ul>
+                                        <li>Time Tracking</li>
+                                        <li>Technical Support</li>
+                                        <li>ONET Frequently Asked Questions</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Applications</h5>
+                                    <ul>
+                                        <li>Time Tracking</li>
+                                        <li>Technical SUpport</li>
+                                        <li>ONET Frequently Asked Questions</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-md-9" id="event-details">
-                                <p>event name</p>
-                                <p>event time</p>
-                                <p>Minneapolis, MN</p>
-                            </div>    
-                        </div>            
-                        <div class="row"> 
-                            <div class="col-md-3" id="date-block">
-                                <div class="date-block">
-                                    <h3>24</h3>
-                                    <p>NOV</p>    
-                                </div>
-                            </div>
-                            <div class="col-md-9" id="event-details">
-                                <p>event name</p>
-                                <p>event time</p>
-                                <p>Minneapolis, MN</p>
-                            </div>                
                         </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <footer class="container-fluid">
-        <h1>FOOTER</h1>
     </footer>
-    <script src="bootstrap.min.js"></script>
-    <script src="RDTscript.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="RDTscript.js"></script>
 </body>
 </html>
