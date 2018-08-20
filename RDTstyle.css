@@ -408,6 +408,7 @@ main{
 }
 .footer-links li{
     color: white;
+
 }
 .footer-links li::before {
     color: #f98d29;
