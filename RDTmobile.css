@@ -1,0 +1,131 @@
+.row{
+    margin: 0px;
+}
+.fas{
+    color: white;
+    font-size: 24px;
+    padding: 8px 9px;
+}
+.website-body{
+    padding: 0px 5px;
+}
+.logo{
+    position: relative;
+    top: -5px;
+}
+.navigation{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.main-content{
+    padding: 0px;
+}
+.row .mobile-icons{
+    float: right;
+}
+.mobile-nav-icon{
+    height: 40px;
+    width: 40px;
+    background-color: #003DA7;
+    margin-left: 0px;
+    margin-right: 15px;
+    float: right;
+}
+.mobile-nav-divider{
+    height: 3px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f98d29;
+}
+.tablet-desktop-nav{
+    background-color: #e2dfdf;
+    margin-bottom: 20px;
+}
+.tablet-desktop-nav .nav-item{
+    font-family: archivo;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.content-block{
+    padding: 0px 0px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+.content-block h2{
+    font-family: archivo;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    margin: 7px;
+}
+.content-block p{
+    font-family: archivo;
+    font-size: 15px;
+    color: white;
+    margin: 7px;
+}
+.content-bundle{
+    margin-bottom: 0px;
+    padding: 0px 0px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+.content-block-side-image{
+    margin-left: 0px;
+    height: 100%;
+}
+.content-block-small{
+    padding: 0px 0px;
+
+}
+.content-block-small p{
+    font-size: 11px;
+    margin: 7px;
+}
+.content-asset{
+    padding: 0px 0px;
+}
+.mobile-content-tab{
+    padding: 0px 0px;
+}
+.mobile-content-tab .fas{
+    padding: 0px;
+    padding-right: 10px;
+}
+.mobile-content-tab h2{
+    padding: 7px 0px;
+}
+#company-news-one{
+    background-color: #003DA7;
+}
+#company-news-two{
+    background-color: #425363;
+}
+#company-news-three{
+    background-color: #5d7e95;
+    margin-bottom: 0px;
+}
+#ceo-corner-one{
+    background-color: #f98d29;
+}
+#market-news-tab{
+    background-color: #c9c8c7;
+}
+#announcements-tab{
+    background-color: #c9c8c7;
+}
+#recently-signed-tab{
+    background-color: #f98d29;
+}
+#upcoming-events-tab{
+    background-color: #f98d29;
+}
+#buzz-block-one{
+    background-color: #003DA7;
+    margin-right: 5px;
+}
+#buzz-block-two{
+    background-color: #425363;
+    margin-left: 5px;
+}
