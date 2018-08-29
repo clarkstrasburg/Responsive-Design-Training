@@ -1,15 +1,15 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 h1{
-    font-size: 45px;
+    font-size: 10vw;
 }
 h2{
     text-transform: uppercase;
-    font-size: 22px;
-    margin: 10px 0px 0px 10px;
+    font-size: 6vw;
+    margin: 2vw 0 0 2vw;
 }
 p{
-    font-size: 18px;
-    margin: 5px 0px 0px 10px;
+    font-size: 4.8vw;
+    margin: 1vw 7vw 0 2vw;
 }
 a{
     text-decoration: none;
@@ -87,18 +87,18 @@ a:hover{
     .bg-white h2{
         background-color: #f98d29;
         color: white;
-        margin: 0px 0px 10px 0px;
-        padding: 3px 10px;
+        margin: 0 0 1vw 0;
+        padding: .3vw 1vw;
     }
     .bg-white h3{
-        margin-top: 5px;
-        font-size: 17px;
+        margin-top: 1vw;
+        font-size: 2.2vw;
         line-height: .5;
     }
     .bg-white p{
-            font-size: 12px;
+            font-size: 1.5vw;
             color: black;
-            margin-top: 0px;
+            margin-top: 0;
     }
 .site-crown{
     margin-top: -5px;
@@ -115,7 +115,7 @@ a:hover{
 }
 .header-contents{
     display: flex;
-    width: 370px;
+    width: 94vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -123,51 +123,52 @@ a:hover{
 }
 .img-md{
     float: left;
-    margin-right: 10px;
+    margin-right: 1vw;
 }
 
 .logo{
-    margin: 15px 2px 10px 10px;
+    margin: 1vw 1vw 0 1vw;
 
 }
 .mobile-icons{
     list-style-type: none;
-    margin: 12px;
     padding-left: 0px;
-    margin: 25px 10px 2px 0px;
+    margin: 2vw 1vw 0 0;
 }
 .mobile-icons li{
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    margin: 0px 0px 0px 15px;
+    height: 10vw;
+    width: 10vw;
+    margin-left: 1.5vw;
     background-color: #003DA7
 }
 
 .desktop-search-and-nav{
     display: flex;
     flex-direction: row;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 6px 0px 0px;
 }
 .search-bar{
     float: right;
+    position: relative;
+    top: .7vw;
+    margin-top: 0;
+
 }
 .search-bar input[type=text] {
-    padding: 5px;
-    margin-top: 12px;
-    font-size: 17px;
-    border: solid 1px black;
+    padding: .4vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+    border: solid .1vw black;
     border-right: none;
   }
 .search-bar button{
     float: right;
-    padding: 6px;
-    margin-top: 12px;
-    margin-right: 16px;
+    padding: .49vw;
+    margin-top: 1vw;
+    margin-right: 1vw;
     background: #425363;
     color: white;
-    font-size: 17px;
+    font-size: 1vw;
     border: none;
     cursor: pointer;
 }
@@ -178,32 +179,33 @@ a:hover{
         justify-content: space-between;
         align-items: flex-end;
         padding-left: 0px;
+        margin-top: 0;
     }
     .desktop-search-and-nav li{
         background-color: #f98d29;
         color: white;
-        margin: 0px 8px;
-        height: 60px;
-        width: 60px;
+        margin-left: 1vw;
+        height: 4vw;
+        width: 4vw;
     }
     .desktop-search-and-nav li:hover{
         opacity: .6;
     }
     .desktop-search-and-nav li p{
-        font-size: 9px;
-        margin: 3px 0px 0px 3px;
+        font-size: .6vw;
+        margin: .2vw 0 0 .2vw;
         text-transform: uppercase;
     }
 
     .desktop-search-and-nav .fas{
-        font-size: 36px;
-        margin: 6px 0px 0px 15px;
+        font-size: 2.3vw;
+        margin: .5vw 0 0 1vw;
     }
         #plane{
-            margin: 6px 0px 0px 6px;
+            margin: .5vw 0 0 .6vw;
         }
         #clock{
-            margin: 6px 0px 0px 12px;
+            margin: .5vw 0 0 .8vw;
         }
 .nav-icon-link{
     color: white;
@@ -213,8 +215,8 @@ a:hover{
 }
 .mobile-menu-icons{
     color: white;
-    font-size: 30px;
-    margin: 5px 6px;
+    font-size: 7vw;
+    margin: 1.5vw 1.8vw;
 }
 .mobile-nav-divider{
     height: 3px;
@@ -222,7 +224,7 @@ a:hover{
     padding: 0px 10px;
 }
 .mobile-sub-body{
-    width: 350px;
+    width: 94vw;
     justify-content: center;
 }
 .mobile-dropdowns-section{
@@ -253,8 +255,7 @@ a:hover{
     margin-bottom: 10px;
 }
 .desktop-navigation{
-    width: 740px;
-    padding-left: 10px;
+    width: 94vw;
     margin: auto;
 }
     .desktop-navigation ul{
@@ -266,12 +267,12 @@ a:hover{
         margin: 0px;
     }
     .desktop-navigation li{
-        margin-right: 30px;
+        margin-right: 2vw;
     }
 .navigation-link{
     color: black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2.2vw;
     font-weight: 600;
 }
 .navigation-link:hover{
@@ -280,18 +281,18 @@ a:hover{
 }
 .meta-text{
     float: right;
-    font-size: 8px;
-    margin: 5px;
+    font-size: 2.5vw;
+    margin: 1vw;
     position: absolute;
-    bottom: 4px;
-    right: 4px;
+    bottom: 1vw;
+    right: 1vw;
     color: darkgrey;
 }
 .read-more-link{
     position: absolute; 
-    bottom: 15px;
-    right: 7px;
-    font-size: 12px;
+    bottom: 1vw;
+    right: 1vw;
+    font-size: 1.3vw;
     color: #425363;
     font-weight: 700;
 }
@@ -301,117 +302,127 @@ a:hover{
 }
 .welcome-user{
     float: right;
-    margin: -44px 9px 9px 10px;
-    padding: 8px 0px 13px 0px;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
+    position: relative;
+    bottom: 3.25vw;
+    padding: .97vw 0;
+    border-left: .2vw solid white;
+    border-right: .2vw solid white;
 }
     .welcome-user p{
-        font-size: 12px;
-        margin: 5px 5px 0px 5px;
+        font-size: .9vw;
+        margin: 0 .5vw;
     }
 .main-body{
     display: flex;
-    width: 370px;
+    width: 94vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px auto;
-    padding-bottom: 8px;
+    margin: 3vw;
+    padding-bottom: 1vw;
 }
+
 .content-bundle{
-    width: 370px;
+    width: 94vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .content-block{
-    margin: 10px;
     position: relative;
+    margin: 2vw 0;
 }
 .content-lg{
-    width: 370px;
-    flex-grow: 1;  
-    height: 330px;
+    width: 94vw;
+    flex-grow: 1; 
+    height: 86vw;
 }
 .content-md{
-    width: 370px;
+    width: 94vw;
     flex-grow: 1;
-    height: 155px;
+    height: 40vw;
     
 }
 .content-sm{
-    width: 44%;
+    width: 44vw;
     flex-grow: 0;
-    height: 155px;
+    height: 40vw;
 }
 .content-sm p{
-    font-size: 13px;
+    font-size: 3vw;
 }
 .sm-left{
-    margin-right: 0px;
+    margin-right: 0;
 }
 .sm-right{
-    margin-left: 0px;
+    margin-left: 0;
+}
+.event-section-title{
+    margin-bottom: 2vw;
 }
 .img-recently-signed{
-    width: 90px;
-    margin-right: 8px;
+    width: 6.8vw;
+    margin: 0vw 1vw 1vw 0vw;
     float: left;
 }
 .recently-signed-content{
     overflow: auto;
-    padding: 6px 0px;
+
 }
     .recently-signed-content p{
-        font-size: 12px;
+        font-size: 1.5vw;
         color: black;
-        margin-top: 0px;
+
     }
     .recently-signed-content h3{
-        margin-top: 5px;
-        font-size: 17px;
+        margin-top: 1vw;
+        font-size: 2.2vw;
         line-height: .5;
     }
 .upcoming-event{
     overflow: auto;
 }
 .date-block{
-    height: 60px;
-    width: 60px;
-    margin: 6px 6px 6px 0px;
+    height: 7.5vw;
+    width: 7.5vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
     background-color: #425363;
     float: left;
     text-align: right;
 }
     .date-block h4{
         color: white;
-        font-size: 30px; 
-        margin: 10px 2px 0px 0px;
+        font-size: 4vw; 
+        margin: 1vw .3vw 0 0;
     }
     .date-block h5{
         color: white;
-        font-size: 15px;
-        margin: -7px 4px;
+        font-size: 2vw;
+        margin: -1vw .5vw;
     }
 .event-details h3{
-    margin-top: 13px;
+    margin-top: 1vw;
+}
+#content-block-two{
+    flex-direction: row;
+    align-content: space-between;
 }
 #content-block-four ul{
     list-style-type: square;
-    padding: 10px 0px 0px 30px;
+    padding: 1vw 0 0 3.5vw;
 }
 #content-block-four li{
     color: #425363;
-    font-size: 12px;
+    font-size: 1.5vw;
     text-decoration: underline;
-    margin-bottom: 8px;
+    margin-bottom: 1vw;
 }
 .skyline-section{
-    width: 370px;
+    width: 94vw;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -444,7 +455,7 @@ a:hover{
     margin: 0px 10px;
 }
 .footer-links-section{
-    width: 370px;
+    width: 94vw;
     margin: auto;
 }
 .social-links{
@@ -464,51 +475,13 @@ a:hover{
 .fa-google-plus{
     color: #d34836;
 }
-/*370 and under*/
-@media only screen and (max-width: 370px){
-    h2{
-        font-size: 16px;
-        margin: 5px 0px 0px 6px;
-    }
-    p{
-        font-size: 13px;
-        margin-left:7px;
-    }
-    .main-body{
-        width: 290px;
-    }
-    .content-bundle{
-        width: 295px;
-    }
-    .content-lg{
-        width: 275px;
-        height: 245px;
-    }
-    .content-md{
-        height: 122px;
-    }
-    .content-sm{
-        height: 122px;
-    }
-    .content-sm p{
-        font-size: 10px;
-    }
-    .mobile-sub-body{
-        width: 275px;
-    }
-    .img-lg{
-        width: 275px;
-    }
-    .header-contents{
-        width: 275px;
-    }
-}
+
 @media only screen and (min-width: 370px) {
 }
 /*600px and up) */
 @media only screen and (min-width: 600px) {}
 /*767.5px and up) */
-@media only screen and (max-width: 767.5px) {
+@media only screen and (max-width: 650px) {
     .navigation-section{
         display: none;
     }
@@ -523,41 +496,94 @@ a:hover{
     }
 }
 /*768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 651px) {
+    h1{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 3vw;
+        margin: 1vw 0 0 1vw;
+    }
+    p{
+        font-size: 2.2vw;
+        margin: 0.2vw 2vw 0 1vw;
+    }
+    .content-sm p{
+        font-size: 1.5vw;
+
+    }
+    .bg-white h2{
+        margin: 0 0 1vw 0;
+        padding: .3vw 1vw;
+    }
+    .meta-text{
+        font-size: 1.2vw;
+        margin: 0;
+    }
     .header-contents{
-        width: 740px;
+        width: 92vw;
     }
     .mobile-sub-body{
         display: none;
     }
+    .mobile-nav-divider{
+        display: none;
+    }
     .main-body{
-      
-        width: 740px;
+        margin: 1vw 3vw;
+        width: 94vw;
     }
     .content-lg{
-        width: 350px;
+        width: 44vw;
+        height: 40vw;
         flex-grow: 0;
+        margin: 1vw;
     }
     .content-md{
-   
+        width: 44vw;
         flex-grow: 0;
+        height: 19vw;
+        margin: 0vw;
+    }
+    .desktop-navigation{
+        width: 90vw;
+    }
+    .img-recently-signed{
+        width: 11vw;
+    }
+
+    .content-sm{
+        height: 19vw;
+        width: 20.5vw;
     }
     .content-bundle{
-
+        width: 44vw;
         flex-grow: 0;
+        margin: 1vw;
+        height: 40vw;
     }
     .footer-links-section{
-        width: 740px;
+        width: 94vw;
     }
     .skyline-section{
-        width: 740px;
+        width: 94vw;
         justify-content: flex-end;
     }
     .skyline-image{
         width: 500px;
  
     }
-    
+    .mobile-menu-icons{
+        font-size: 4vw;
+        margin: .8vw 1vw;
+    }
+    .mobile-icons{
+        margin: 1vw 1vw 0 0;
+    }
+    .mobile-icons li{
+        height: 5.5vw;
+        width: 5.5vw;
+    }
     #content-block-one{
         order: 1;
     }
@@ -578,7 +604,7 @@ a:hover{
     }
 } 
 /*1130 and under) */
-@media only screen and (max-width: 1129.5px) {
+@media only screen and (max-width: 1000px) {
     .desktop-only{
         display: none;
     }    
@@ -587,37 +613,129 @@ a:hover{
     }
 }
 /*1130px and up) */
-@media only screen and (min-width: 1130px) {
+@media only screen and (min-width: 1001px) {
+    h1{
+        font-size: 3.5vw;
+    }
+    h2{
+        font-size: 1.6vw;
+        margin: .8vw 0 0 .8vw;
+    }
+    p{
+        font-size: 1.4vw;
+        margin: 0.2vw 2vw 0 .8vw;
+    }
+    .bg-white h3{
+        font-size: 1.3vw;
+    }
+    .bg-white p{
+        font-size: 1vw;
+    }
+    .mobile-only{
+        display: none;
+    }
+    .navigation-link{
+        font-size: 1.5vw;
+    }
     .desktop-navigation{
-        width: 1110px;
+        width: 81vw;
     }
         .desktop-navigation ul{
             justify-content: flex-start;
         }
-    .mobile-only{
-        display: none;
-    }
     .header-contents{
-        width: 1110px;
+        width: 79vw;
     }
     .main-body{
-        width: 1110px;
+        width: 94vw;
+        margin: 0vw 3vw;
+    }
+    .content-region{
+        width: 25vw;
+        height: 25vw;
+        margin: 1vw;
+    }
+    .content-lg{
+        width: 25vw;
+        height: 25vw;
+        margin: 1vw;
+    }
+    .content-md{
+        width: 25vw;
+        height: 11.7vw;
+    }
+    .content-sm{
+        width: 11.5vw;
+        height: 11.7vw;
+        margin: 1.5vw 0;
+    }
+        .content-sm p {
+            font-size: 1vw;
+            margin: .2vw 0 0 .4vw
+        }
+    .date-block{
+        height: 4.5vw;
+        width: 4.5vw;
+        margin-bottom: .8vw;
+        margin-right: .8vw;
+    }
+    .date-block h4{
+        font-size: 2.5vw;
+        margin: 0.8vw .1vw 0 0;
+    }
+    .date-block h5{
+        font-size: 1.3vw;
+        margin: -.7vw 0.1vw
+    }
+    .desktop-navigation{
+        width: 79vw;
+    }
+    .event-section-title{
+        margin-bottom: 1.5vw;
+        }
+    .event-details h3{
+        margin-top: .5vw;
+    }
+    .logo{
+        margin: 1vw 0vw;
+    }
+
+    .recently-signed-content h3{
+        font-size: 1.3vw;
+        margin-top: .5vw;
+    }
+    .recently-signed-content p{
+        font-size: 1vw;
+    }
+    .img-recently-signed{
+        width: 6.8vw;
+        margin: 0vw .8vw .8vw 0vw;
     }
     .skyline-section{
-        width: 1110px;
+        width: 80vw;
         justify-content: space-between;
     }
     .skyline-image{
         width: 550px;
     }
     .footer-links-section{
-        width: 1110px;
+        width: 94vw;
     }
     .social-links{
         align-self: flex-end;
     }
     .links-list{
         padding-left: 30px;
+    }
+    .meta-text{
+      bottom: .5vw;
+      right: 0.5vw;
+      font-size: .9vw;
+    }
+    .read-more-link{
+        bottom: .5vw;
+        right: 0.5vw;
+        font-size: .9vw;
     }
     #content-block-one{
         order: 2;
@@ -631,6 +749,12 @@ a:hover{
     #content-block-four{
         order: 1;
     }
+        #content-block-four ul{
+            padding: .5vw 0 0 3vw;
+        }
+        #content-block-four li{
+            font-size: .8vw;
+        }
     #content-block-five{
         order: 4;
     }
