@@ -42,6 +42,15 @@ a:hover{
     .bg-blue p{
         color: white;
     }
+.bg-grey{
+    background-color: #505050;
+}
+.bg-grey h2{
+    color: white; 
+}
+.bg-grey .fas{
+    color: white;
+}
 .bg-darkgrey{
     background-color: #425363;
 }
@@ -81,13 +90,31 @@ a:hover{
 .bg-lightlightgrey{
     background-color: #e6e6e6;
 }
+.bg-darkdarkgrey{
+    background-color: #2C302E;
+}
+.bg-darkdarkgrey h2{
+    color: white;
+    margin: .7vw 2vw;
+    padding-top: 1.2vw;
+}
+.bg-darkdarkgrey .fas{
+    color: white;
+    margin: 2vw 0vw 1vw 2vw;
+}
+.bg-darkdarkgrey ul{
+    margin-bottom: 0;
+}
+.bg-darkdarkgrey li{
+    color: white; 
+}
 .bg-white{
     background-color: white;
 }
     .bg-white h2{
         background-color: #f98d29;
         color: white;
-        margin: 0 0 1vw 0;
+        margin: 1vw 0 1vw 0;
         padding: .3vw 1vw;
     }
     .bg-white h3{
@@ -100,18 +127,24 @@ a:hover{
             color: black;
             margin-top: 0;
     }
+    .bg-white .dropdown-caret{
+        color: white;
+        margin:  1vw 1vw 2vw 2vw;
+    }
 .site-crown{
-    margin-top: -5px;
+    margin-top: 0;
     margin-bottom: 10px;
     text-align: center;
-    height: 13px;
+    height: 2vh;
 }
 .site-crown .fas{
     background-color: #425363;
-    width: 25px;
+    width: 5.5vw;
     color: white;
-    font-size: 25px;
+    font-size: 5.5vw;
     border-radius: 50%;
+    line-height: 6vw;
+
 }
 .header-contents{
     display: flex;
@@ -142,11 +175,53 @@ a:hover{
     margin-left: 1.5vw;
     background-color: #003DA7
 }
-
-.desktop-search-and-nav{
-    display: flex;
-    flex-direction: row;
+.dropdown-md{
+    overflow-y: hidden;
+    height: 13vw;
+    margin-bottom: 2vw;
+    transition: height 600ms ease;
 }
+.dropdown-active-md{
+    height: 42vw;
+    transition: height 600ms ease;
+}
+.dropdown-lg{
+    height:13vw;
+    margin-bottom: 2vw;
+    overflow-y: hidden;
+    transition: height 600ms ease;
+}
+.dropdown-active-lg{
+    height: 93vw;
+    transition: height 600ms ease;
+}
+.dropdown-title{
+    display: flex;
+    cursor: pointer;
+}
+.dropdown-caret{
+    font-size: 7vw;
+    margin: 2vw 0vw 1vw 2vw;
+    transform: rotateZ(-90deg);
+    transition: transform 350ms ease;
+}
+.dropdown-caret-side-menu{
+    font-size: 7vw;
+    margin: 2vw 0vw 1vw 2vw;
+    transform: rotateZ(-90deg);
+    transition: transform 350ms ease;
+}
+.dropdown-caret-active{
+    transform: rotateZ(0deg);
+    transition: transform 350ms ease;
+}
+.mobile-icons li:hover{
+    opacity: .6;
+}
+.mobile-icons li{
+    cursor: pointer;
+}
+
 .search-bar{
     float: right;
     position: relative;
@@ -172,6 +247,10 @@ a:hover{
     border: none;
     cursor: pointer;
 }
+.desktop-search-and-nav{
+    display: flex;
+    flex-direction: row;
+}
     .desktop-search-and-nav ul{
         list-style-type: none;
         display: flex;
@@ -187,6 +266,7 @@ a:hover{
         margin-left: 1vw;
         height: 4vw;
         width: 4vw;
+        line-height: 1.3vw;
     }
     .desktop-search-and-nav li:hover{
         opacity: .6;
@@ -263,8 +343,8 @@ a:hover{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 7px 0px;
-        margin: 0px;
+        padding: .5vw 0;
+        margin: 0;
     }
     .desktop-navigation li{
         margin-right: 2vw;
@@ -310,7 +390,7 @@ a:hover{
 }
     .welcome-user p{
         font-size: .9vw;
-        margin: 0 .5vw;
+        margin: 0.8vw .5vw;
     }
 .main-body{
     display: flex;
@@ -342,7 +422,120 @@ a:hover{
     width: 94vw;
     flex-grow: 1;
     height: 40vw;
-    
+}
+.side-menu{
+    border-top: 2vh solid #425363;
+    width: 80vw;
+    height: 98vh;
+    background-color: #505050;
+    z-index: 1;
+    position: absolute;
+    right: -100vw;
+    top: 0vh;
+    transition: right 600ms ease;
+}   
+.side-menu-dropdown-large{
+    background-color: #505050;
+    height: 18vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1vw solid #2C302E;
+}
+.side-menu-dropdown-large h2{
+    margin: 5vw;
+}
+.side-menu-dropdown-large .fas{
+    margin: 5vw 0 0 25vw;
+    font-size: 8vw;
+}
+.side-menu-dropdown-small{
+    background-color: #505050;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+}
+.side-menu-dropdown-small h2{
+    margin-top: 1.5vw;
+}
+.side-menu-dropdown-content{
+    padding: .5vw 0;
+    height: 0vw;
+    overflow-y: hidden;
+    transition: height 600ms ease;
+}
+.side-menu-nav-active{
+    height: 125px;
+    transition: height 600ms ease;
+}
+#side-menu-nav-links ul{
+    list-style-type: square;
+}
+#side-menu-my-links ul{
+    list-style-type: square;
+}
+.side-menu-mylinks-active{
+    height: 30px;
+    transition: height 600ms ease;
+}
+.side-menu-shortcuts-active{
+    height: 39vw;
+    transition: height 600ms ease;
+}
+.side-menu-icons-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 0px;
+    margin-top: 0;
+    padding: 2vw 14vw;
+
+}
+.side-menu-icons-list li{
+    background-color: #f98d29;
+    color: white;
+    margin: 1vw 1vw;
+    height: 15vw;
+    width: 15vw;
+    line-height: 4vw;
+}
+.side-menu-icons-list li:hover{
+    opacity: .6;
+}
+.side-menu-icons-list p{
+    font-size: 2.2vw;
+    margin: 1vw 0 0 .4vw;
+    text-transform: uppercase;
+    color: white; 
+  
+}
+.side-menu-icons-list .fas{
+    font-size: 9vw;
+    margin:2vw 0 0 3vw;
+}
+#side-clock{
+    margin-left: 2.5vw;
+}
+#side-plane{
+    margin-left: 1.5vw;
+}
+.menu-active{
+    right:0vw;transition:right 600ms ease;
+}
+.site{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.site-body{
+    position: relative;
+    right: 0px;
+    transition: right 600ms ease;
+}
+.site-body-active{
+    right:80vw;transition:right 600ms ease;
 }
 .content-sm{
     width: 44vw;
@@ -360,6 +553,8 @@ a:hover{
 }
 .event-section-title{
     margin-bottom: 2vw;
+    padding: 1vw 0;
+    background-color: #f98d29;
 }
 .img-recently-signed{
     width: 6.8vw;
@@ -394,13 +589,15 @@ a:hover{
 }
     .date-block h4{
         color: white;
-        font-size: 4vw; 
-        margin: 1vw .3vw 0 0;
+        font-size: 8vw; 
+        margin: 2vw .3vw 0 0;
+        line-height: 12vw;
     }
     .date-block h5{
         color: white;
-        font-size: 2vw;
-        margin: -1vw .5vw;
+        font-size: 4vw;
+        margin: 0vw .5vw;
+        line-height: 0vw;
     }
 .event-details h3{
     margin-top: 1vw;
@@ -419,6 +616,7 @@ a:hover{
     text-decoration: underline;
     margin-bottom: 1vw;
 }
+
 .skyline-section{
     width: 94vw;
     margin: auto;
@@ -482,17 +680,40 @@ a:hover{
 @media only screen and (min-width: 600px) {}
 /*767.5px and up) */
 @media only screen and (max-width: 650px) {
+ 
+    #content-block-four ul{
+        padding: 3vw 0px 0 6.5vw;
+    }
+    .bg-lightgrey a{
+        font-size: 3.2vw;
+    }
+    .bg-white h3{
+        margin-top: 3vw;
+        font-size: 5vw;
+    }
+    .bg-white p{
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+    .date-block{
+        height: 17vw;
+        width: 17vw;
+    }
     .navigation-section{
         display: none;
     }
-    #content-block-four{
-        display: none;
+    .img-recently-signed{
+        width: 24vw;
+        margin: 2vw 1vw 1vw 0vw;
     }
-    #content-block-five{
-        display: none;
+    .read-more-link{
+        font-size: 2.5vw;
     }
-    #content-block-six{
-        display: none;
+    .recently-signed-content p{
+        font-size: 3.5vw;
+    }
+    .upcoming-event{
+        margin-bottom: 2vw;
     }
 }
 /*768px and up) */
@@ -508,12 +729,53 @@ a:hover{
         font-size: 2.2vw;
         margin: 0.2vw 2vw 0 1vw;
     }
+    #side-plane{
+        margin-left: .7vw;
+    }
+    #side-clock{
+        margin-left: 1.3vw;
+    }
     .content-sm p{
         font-size: 1.5vw;
 
     }
+    .date-block h4{
+        font-size: 4vw;
+        margin: 2.5vw .3vw 0 0;
+        line-height: 3vw;
+    }
+    .date-block h5{
+        font-size: 2vw;
+        line-height: 1vw;
+        margin-top: .5vw;
+        margin-left: 2.7vw;
+    }
+    .dropdown{
+        height: 40vw;
+    }
+    .dropdown-caret{
+        display: none;
+    }
+    .dropdown-md{
+        height: 19vw;
+        transition: height 0ms ease;
+        margin-bottom: 0vw;
+    }
+    .dropdown-lg{
+        height: 42vw;
+        transition: height 0ms ease;
+        margin-bottom: 0vw;
+    }
+    .dropdown-caret-side-menu {
+        font-size: 4vw;
+        margin: 1.5vw 0vw 1vw 1vw;
+    }
+    .event-section-title{
+        padding: 0px;
+        margin-bottom: 2vw;
+    }
     .bg-white h2{
-        margin: 0 0 1vw 0;
+        margin: 0;
         padding: .3vw 1vw;
     }
     .meta-text{
@@ -551,7 +813,67 @@ a:hover{
     .img-recently-signed{
         width: 11vw;
     }
-
+    .site-crown{
+        height: 1vh;
+    }
+    .site-crown .fas{
+        width: 3vw;
+        font-size: 3vw;
+        line-height: 3vw;  
+    }
+    .side-menu{
+        border-top: 1vh solid #425363;
+        width: 40vw;
+        height: 98vh;
+    }
+    .side-menu-navigation{
+        display: none;
+    }
+    .side-menu-dropdown-content{
+        padding: .33vw 0;
+    }
+    .side-menu-dropdown-small {
+        height: 6vw;
+    }
+    .side-menu-dropdown-small h2 {
+        margin-top: 1.5vw;
+    }
+    .side-menu-dropdown-large{
+        height: 14vw;
+        border-bottom: .5vw solid #2C302E;
+    }
+    .side-menu-dropdown-large .fas {
+        margin: 5vw 0 0 6vw;
+        font-size: 4vw;
+    }
+    .side-menu-nav-active {
+        height: 17vw;
+    }
+    .side-menu-mylinks-active{
+        height: 30px;
+    }
+    .side-menu-shortcuts-active{
+        height: 26vw;
+    }
+    .side-menu-icons-list{
+        padding: 2vw 3vw;
+    }
+    .side-menu-icons-list li{
+        height: 9vw;
+        width: 9vw;
+    }
+    .side-menu-icons-list p{
+        font-size: 1.3vw;
+        margin: 0.2vw 0 0 .4vw;
+        line-height: 1vw;
+    }
+    .side-menu-icons-list .fas{
+        font-size: 6vw;
+        margin: 1vw 0 0 2vw;
+    }
+    .site-body-active{
+        right:40vw;transition:right 600ms ease;
+    }
     .content-sm{
         height: 19vw;
         width: 20.5vw;
@@ -681,14 +1003,22 @@ a:hover{
     }
     .date-block h4{
         font-size: 2.5vw;
-        margin: 0.8vw .1vw 0 0;
+        margin: 0.7vw .1vw .2vw ;
     }
     .date-block h5{
         font-size: 1.3vw;
-        margin: -.7vw 0.1vw
+        margin: -.5vw 0.1vw
     }
     .desktop-navigation{
         width: 79vw;
+    }
+    .dropdown-md{
+        height: 11.75vw
+        }
+    .dropdown-lg{
+        margin: 0vw 1vw 0vw 0vw;
+        height: 26vw;
+        width: 26vw;
     }
     .event-section-title{
         margin-bottom: 1.5vw;
@@ -710,6 +1040,21 @@ a:hover{
     .img-recently-signed{
         width: 6.8vw;
         margin: 0vw .8vw .8vw 0vw;
+    }
+    .side-menu{
+        display: none;
+    }
+    .site-body-active{
+        right: 0vw;
+        transition: right 0ms ease;
+    }
+    .site-crown{
+        height: 1vh;
+    }
+    .site-crown .fas{
+        width: 2vw;
+        font-size: 2vw;
+        line-height: 1.8vw;  
     }
     .skyline-section{
         width: 80vw;
@@ -736,6 +1081,11 @@ a:hover{
         bottom: .5vw;
         right: 0.5vw;
         font-size: .9vw;
+    }
+    .welcome-user{
+        bottom: 3.2vw;
+        padding: 0.1vw;
+        height: 3.2vw;
     }
     #content-block-one{
         order: 2;

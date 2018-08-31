@@ -10,283 +10,368 @@
     <link rel="stylesheet" type="text/css" media="screen" href="RDTflex.css" />
 
 </head>
-<header>
+<div class="site">
     <div class="site-crown bg-darkgrey">
         <span class="fas fa-caret-down"></span>
     </div>
-    <div class="header-contents">
-        <span class="logo">
-            <h1>LOGO</h1>
-        </span>
-        <div class="desktop-search-and-nav desktop-only">
-            <div class="search-bar">
-                <form>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">GO</button>
-                </form>
+    <div class="site-body" id="site-body">
+        <header>
+            <div class="header-contents">
+                <span class="logo">
+                    <h1>LOGO</h1>
+                </span>
+                <div class="desktop-search-and-nav desktop-only">
+                    <div class="search-bar">
+                        <form>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit">GO</button>
+                        </form>
+                    </div>
+                    <ul class="desktop-nav-icons">
+                        <li>
+                            <a href="#" class="nav-icon-link">
+                                <span class="fas fa-user" id="user"></span>
+                                <p>directory</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-icon-link">
+                                <span class="fas fa-map-marker-alt" id="map"></span>
+                                <p>location</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-icon-link">
+                                <span class="fas fa-clock" id="clock"></span>
+                                <p>enter time</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-icon-link">
+                                <span class="fas fa-plane-departure" id="plane"></span>
+                                <p>travel</p>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#" class="nav-icon-link">
+                                <span class="fas fa-file-alt" id="file"></span>
+                                <p>forms</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="mobile-icons-section mobile-only">
+                    <ul class="mobile-icons">
+                        <li>
+                            <a class="search-button link-button">
+                                <span class="fas fa-search mobile-menu-icons"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-button" id="menu-button" onclick="openMenu(); slideContent()">
+                                <span class="fas fa-bars mobile-menu-icons"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </span>
             </div>
-            <ul class="desktop-nav-icons">
+            <div class="mobile-nav-divider bg-orange"></div>
+            <div class="navigation-section bg-lightlightgrey">
+                <div class="desktop-navigation">
+                    <ul>
+                        <li>
+                            <a href="#" class="navigation-link">Departments</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation-link">Tools</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation-link">Associate Center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation-link">Project Delivery</a>
+                        </li>
+                    </ul>
+                    <div class="welcome-user bg-lightgrey">
+                        <p>Welcome, USER!</p>
+                    </div>
+                </div> 
+            </div>
+        </header>
+        <body>
+            <div class="main-body">
+                <div class="content-region news-block content-block content-lg bg-blue" id="content-block-one">
+                    <img src="assets/tile-lg.jpg" class="img-lg" width="100%">
+                    <h2>Company News</h2>
+                    <p>Military Service Provided Excellent Professional Training for Company Employee</p>
+                    <span class="meta-text">12/25/14</span>
+                </div>
+                <div class="content-region news-block content-bundle" id="content-block-two">
+                    <div class="content-block content-md bg-orange">
+                        <img src="assets/tile-md.jpg" class="img-md" height="100%">
+                        <h2>CEO's Corner</h2>
+                        <p>Tile Title Element</p>
+                        <span class="meta-text">12/25/01</span>
+                    </div>
+                    <div class="content-block news-block news-block content-sm sm-left bg-blue">
+                        <img src="assets/tile-lg.jpg" class="img-sm" width="100%">
+                        <p>The Latest News and Buzz on Company Projects</p>
+                        <span class="meta-text">12/12/15</span>
+                    </div>
+                    <div class="content-block news-block news-block content-sm sm-right bg-darkgrey">
+                        <img src="assets/tile-lg.jpg" class="img-sm" width="100%">
+                        <p>The Latest News and Buzz on Company Projects</p>
+                        <span class="meta-text">12/12/15</span>
+                    </div>
+                </div>
+                <div class="content-region content-bundle" id="content-block-three">
+                    <div class="content-block content-md bg-darkgrey">
+                        <img src="assets/tile-md.jpg" class="img-md" height="100%">
+                        <h2>Company News</h2>
+                        <p>Tile Title Element</p>
+                        <span class="meta-text">12/25/01</span>
+                    </div>
+                    <div class="content-block content-md bg-teal">
+                        <img src="assets/tile-md.jpg" class="img-md" height="100%">
+                        <h2>Company News</h2>
+                        <p>Tile Title Element</p>
+                        <span class="meta-text">12/25/01</span>
+                    </div>
+                </div>
+                <div class="content-region content-bundle" id="content-block-four">
+                    <div class="dropdown-md" id="dropdown-news">
+                        <div class="content-block content-md bg-lightgrey">
+                            <div class="dropdown-title" onclick="dropdownNews(); rotateNews()">
+                                <span class="fas fa-caret-down dropdown-caret" id="caret-news"></span>
+                                <h2>Market News</h2>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Student Housing Heats Up in St. Louis - 10/27/14</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Company Selected as Developer for Seven - 10/25/14</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Minneapolis Leaders Welcome Downtown - 9/30/14</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="read-more-link">+ view more</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-md" id="dropdown-announcements">
+                        <div class="content-block dropdown-body content-md bg-lightgrey">
+                            <div class="dropdown-title" onclick="dropdownAnnouncements(); rotateAnnouncements()">
+                                <span class="fas fa-caret-down dropdown-caret" id="caret-announcements"></span>
+                                <h2>Announcements</h2>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Student Housing Heats Up in St. Louis - 10/27/14</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Company Selected as Developer for Seven - 10/25/14</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Minneapolis Leaders Welcome Downtown - 9/30/14</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="read-more-link">+ view more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-lg content-region" id="content-block-five">
+                    <div class="content-block content-lg bg-white">
+                        <div class="event-section-title dropdown-title" onclick="dropdownSigned(); rotateSigned()">
+                            <span class="fas fa-caret-down dropdown-caret" id="caret-signed"></span>
+                            <h2>Recently Signed</h2>
+                        </div>
+                        <div class="recently-signed-content">
+                            <img src="assets/warehouse.jpg" class="img-recently-signed">
+                            <h3>Character Communications</h3>
+                            <p>12/24/2014</p>
+                            <p>Minneapolis,St.Paul</p>
+                        </div>
+                        <div class="recently-signed-content">
+                            <img src="assets/warehouse.jpg" class="img-recently-signed">
+                            <h3>Character Communications</h3>
+                            <p>12/24/2014</p>
+                            <p>Minneapolis,St.Paul</p>
+                        </div>
+                        <div class="recently-signed-content">
+                            <img src="assets/warehouse.jpg" class="img-recently-signed">
+                            <h3>Character Communications</h3>
+                            <p>12/24/2014</p>
+                            <p>Minneapolis,St.Paul</p>
+                        </div>
+                        <div class="recently-signed-content">
+                            <img src="assets/warehouse.jpg" class="img-recently-signed">
+                            <h3>Character Communications</h3>
+                            <p>12/24/2014</p>
+                            <p>Minneapolis,St.Paul</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-lg content-region" id="content-block-six">
+                    <div class="content-block content-lg bg-white">
+                        <div class="event-section-title dropdown-title" onclick="dropdownEvents(); rotateEvents()">
+                            <span class="fas fa-caret-down dropdown-caret" id="caret-events"></span>
+                            <h2>Upcoming Events</h2>
+                        </div>
+                        <div class="upcoming-event">
+                            <div class="date-block">
+                                <h4>24</h4>
+                                <h5>NOV</h5>
+                            </div>
+                            <span class="event-details">
+                                <h3>Character Communications</h3>
+                                <p>6:00pm-8:00pm</p>
+                                <p>Minneapolis, MN</p>
+                            </span>
+                        </div>
+                        <div class="upcoming-event">
+                            <div class="date-block">
+                                <h4>24</h4>
+                                <h5>NOV</h5>
+                            </div>
+                            <span class="event-details">
+                                <h3>Character Communications</h3>
+                                <p>6:00pm-8:00pm</p>
+                                <p>Minneapolis, MN</p>
+                            </span>
+                        </div>
+                        <div class="upcoming-event">
+                            <div class="date-block">
+                                <h4>24</h4>
+                                <h5>NOV</h5>
+                            </div>
+                            <span class="event-details">
+                                <h3>Character Communications</h3>
+                                <p>6:00pm-8:00pm</p>
+                                <p>Minneapolis, MN</p>
+                            </span>
+                        </div>
+                        <div class="upcoming-event">
+                            <div class="date-block">
+                                <h4>24</h4>
+                                <h5>NOV</h5>
+                            </div>
+                            <span class="event-details">
+                                <h3>Character Communications</h3>
+                                <p>6:00pm-8:00pm</p>
+                                <p>Minneapolis, MN</p>
+                            </span>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </body>
+        <footer>
+            <div class="skyline-section">
+                <div class="social-links desktop-only">
+                    <span class="fab fa-google-plus"></span>
+                    <span class="fab fa-twitter"></span>
+                    <span class="fab fa-youtube"></span>
+                    <ul class="links-list">
+                        <li>feedback</li>
+                        <li>support</li>
+                        <li>company-group.com</li>
+                    </ul>
+                </div>
+                <div class="skyline-image">
+                    <img src="assets/minneapolis_skyline_5415.png" class="img-skyline" width="100%">
+                </div>
+            </div>
+            <div class="footer-divider bg-teal"></div>
+            <div class="footer-content bg-darkgrey">
+                <div class="footer-links-section">
+                    <ul class="links-list mobile-only">
+                        <li>feedback</li>
+                        <li>support</li>
+                        <li>company-group.com</li>
+                    </ul>
+                    <div class="social-links mobile-only">
+                        <span class="fab fa-google-plus"></span>
+                        <span class="fab fa-twitter"></span>
+                        <span class="fab fa-youtube"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-dropdown-large bg-grey" id="ONET-menu">
+            <h2>ONET Menu</h2>
+            <span class="fas fa-angle-right"></span>
+        </div>
+        <div class="side-menu-navigation">
+            <div class="side-menu-dropdown-small bg-grey" onclick="dropdownSidenav(); rotateSidenav()">
+                <span class="fas fa-caret-down dropdown-caret-side-menu" id="caret-side-navigation"></span>
+                <h2>Site Navigation</h2>
+            </div>
+            <div class="side-menu-dropdown-content bg-darkdarkgrey" id="side-menu-nav-links">
+                <ul>
+                    <li>Home</li>
+                    <li>Departments</li>
+                    <li>Tools</li>
+                    <li>Associate Center</li>
+                    <li>Project Delivery</li>
+                </ul>
+            </div>
+        </div>
+        <div class="side-menu-dropdown-small bg-grey" onclick="dropdownMylinks(); rotateMylinks()">
+            <span class="fas fa-caret-down dropdown-caret-side-menu" id="caret-my-links"></span>
+            <h2>My Links</h2>
+        </div>
+        <div class="side-menu-dropdown-content bg-darkdarkgrey" id="side-menu-my-links">
+            <ul>
+                <li>(User Links Here)</li>
+            </ul>
+        </div>
+        <div class="side-menu-dropdown-small bg-grey" onclick="dropdownShortcuts(); rotateShortcuts()">
+            <span class="fas fa-caret-down dropdown-caret-side-menu" id="caret-shortcuts"></span>
+            <h2>Shortcuts</h2>
+        </div>
+        <div class="side-menu-dropdown-content bg-darkdarkgrey" id="side-menu-shortcuts">
+            <ul class="side-menu-icons-list">
                 <li>
-                    <a href="#" class="nav-icon-link">
-                        <span class="fas fa-user" id="user"></span>
+                    <a href="#" class="side-menu-icon">
+                        <span class="fas fa-user" id="side-user"></span>
                         <p>directory</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-icon-link">
-                        <span class="fas fa-map-marker-alt" id="map"></span>
+                    <a href="#" class="side-menu-icon">
+                        <span class="fas fa-map-marker-alt" id="side-map"></span>
                         <p>location</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-icon-link">
-                        <span class="fas fa-clock" id="clock"></span>
+                    <a href="#" class="side-menu-icon">
+                        <span class="fas fa-clock" id="side-clock"></span>
                         <p>enter time</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-icon-link">
-                        <span class="fas fa-plane-departure" id="plane"></span>
+                    <a href="#" class="side-menu-icon">
+                        <span class="fas fa-plane-departure" id="side-plane"></span>
                         <p>travel</p>
                     </a>    
                 </li>
                 <li>
-                    <a href="#" class="nav-icon-link">
-                        <span class="fas fa-file-alt" id="file"></span>
+                    <a href="#" class="side-menu-icon">
+                        <span class="fas fa-file-alt" id="side-file"></span>
                         <p>forms</p>
                     </a>
                 </li>
             </ul>
         </div>
-        <span class="mobile-icons-section mobile-only">
-            <ul class="mobile-icons">
-                <li><span class="fas fa-search mobile-menu-icons"></span></li>
-                <li><span class="fas fa-bars mobile-menu-icons"></span></li>
-            </ul>
-        </span>
     </div>
-    <div class="mobile-nav-divider bg-orange"></div>
-    <div class="navigation-section bg-lightlightgrey">
-        <div class="desktop-navigation">
-            <ul>
-                <li>
-                    <a href="#" class="navigation-link">Departments</a>
-                </li>
-                <li>
-                    <a href="#" class="navigation-link">Tools</a>
-                </li>
-                <li>
-                    <a href="#" class="navigation-link">Associate Center</a>
-                </li>
-                <li>
-                    <a href="#" class="navigation-link">Project Delivery</a>
-                </li>
-            </ul>
-            <div class="welcome-user bg-lightgrey">
-                <p>Welcome, USER!</p>
-            </div>
-        </div> 
-    </div>
-</header>
-<body>
-    <div class="main-body">
-        <div class="content-region news-block content-block content-lg bg-blue" id="content-block-one">
-            <img src="assets/tile-lg.jpg" class="img-lg" width="100%">
-            <h2>Company News</h2>
-            <p>Military Service Provided Excellent Professional Training for Company Employee</p>
-            <span class="meta-text">12/25/14</span>
-        </div>
-        <div class="content-region news-block content-bundle" id="content-block-two">
-            <div class="content-block content-md bg-orange">
-                <img src="assets/tile-md.jpg" class="img-md" height="100%">
-                <h2>CEO's Corner</h2>
-                <p>Tile Title Element</p>
-                <span class="meta-text">12/25/01</span>
-            </div>
-            <div class="content-block news-block news-block content-sm sm-left bg-blue">
-                <img src="assets/tile-lg.jpg" class="img-sm" width="100%">
-                <p>The Latest News and Buzz on Company Projects</p>
-                <span class="meta-text">12/12/15</span>
-            </div>
-            <div class="content-block news-block news-block content-sm sm-right bg-darkgrey">
-                <img src="assets/tile-lg.jpg" class="img-sm" width="100%">
-                <p>The Latest News and Buzz on Company Projects</p>
-                <span class="meta-text">12/12/15</span>
-            </div>
-        </div>
-        <div class="content-region content-bundle" id="content-block-three">
-            <div class="content-block content-md bg-darkgrey">
-                <img src="assets/tile-md.jpg" class="img-md" height="100%">
-                <h2>Company News</h2>
-                <p>Tile Title Element</p>
-                <span class="meta-text">12/25/01</span>
-            </div>
-            <div class="content-block content-md bg-teal">
-                <img src="assets/tile-md.jpg" class="img-md" height="100%">
-                <h2>Company News</h2>
-                <p>Tile Title Element</p>
-                <span class="meta-text">12/25/01</span>
-            </div>
-        </div>
-        <div class="content-region content-bundle" id="content-block-four">
-            <div class="content-block content-md bg-lightgrey">
-                <h2>Market News</h2>
-                <ul>
-                    <li>
-                        <a href="#">Student Housing Heats Up in St. Louis - 10/27/14</a>
-                    </li>
-                    <li>
-                        <a href="#">Company Selected as Developer for Seven - 10/25/14</a>
-                    </li>
-                    <li>
-                        <a href="#">Minneapolis Leaders Welcome Downtown - 9/30/14</a>
-                    </li>
-                </ul>
-                <a href="#" class="read-more-link">+ view more</a>
-            </div>
-            <div class="content-block content-md bg-lightgrey">
-                <h2>Announcements</h2>
-                <ul>
-                    <li>
-                        <a href="#">Student Housing Heats Up in St. Louis - 10/27/14</a>
-                    </li>
-                    <li>
-                        <a href="#">Company Selected as Developer for Seven - 10/25/14</a>
-                    </li>
-                    <li>
-                        <a href="#">Minneapolis Leaders Welcome Downtown - 9/30/14</a>
-                    </li>
-                </ul>
-                <a href="#" class="read-more-link">+ view more</a>
-            </div>
-        </div>
-        <div class="content-region content-block content-lg bg-white" id="content-block-five">
-            <div class="event-section-title">
-                <h2>Recently Signed</h2>
-            </div>
-            <div class="recently-signed-content">
-                <img src="assets/warehouse.jpg" class="img-recently-signed">
-                <h3>Character Communications</h3>
-                <p>12/24/2014</p>
-                <p>Minneapolis,St.Paul</p>
-            </div>
-            <div class="recently-signed-content">
-                <img src="assets/warehouse.jpg" class="img-recently-signed">
-                <h3>Character Communications</h3>
-                <p>12/24/2014</p>
-                <p>Minneapolis,St.Paul</p>
-            </div>
-            <div class="recently-signed-content">
-                <img src="assets/warehouse.jpg" class="img-recently-signed">
-                <h3>Character Communications</h3>
-                <p>12/24/2014</p>
-                <p>Minneapolis,St.Paul</p>
-            </div>
-            <div class="recently-signed-content">
-                <img src="assets/warehouse.jpg" class="img-recently-signed">
-                <h3>Character Communications</h3>
-                <p>12/24/2014</p>
-                <p>Minneapolis,St.Paul</p>
-            </div>
-        </div>
-        <div class="content-region content-block content-lg bg-white" id="content-block-six">
-            <div class="event-section-title">
-                <h2>Upcoming Events</h2>
-            </div>
-            <div class="upcoming-event">
-                <div class="date-block">
-                    <h4>24</h4>
-                    <h5>NOV</h5>
-                </div>
-                <span class="event-details">
-                    <h3>Character Communications</h3>
-                    <p>6:00pm-8:00pm</p>
-                    <p>Minneapolis, MN</p>
-                </span>
-            </div>
-            <div class="upcoming-event">
-                <div class="date-block">
-                    <h4>24</h4>
-                    <h5>NOV</h5>
-                </div>
-                <span class="event-details">
-                    <h3>Character Communications</h3>
-                    <p>6:00pm-8:00pm</p>
-                    <p>Minneapolis, MN</p>
-                </span>
-            </div>
-            <div class="upcoming-event">
-                <div class="date-block">
-                    <h4>24</h4>
-                    <h5>NOV</h5>
-                </div>
-                <span class="event-details">
-                    <h3>Character Communications</h3>
-                    <p>6:00pm-8:00pm</p>
-                    <p>Minneapolis, MN</p>
-                </span>
-            </div>
-            <div class="upcoming-event">
-                <div class="date-block">
-                    <h4>24</h4>
-                    <h5>NOV</h5>
-                </div>
-                <span class="event-details">
-                    <h3>Character Communications</h3>
-                    <p>6:00pm-8:00pm</p>
-                    <p>Minneapolis, MN</p>
-                </span>
-            </div>
-            
-        </div>
-        <div class="mobile-sub-body">
-            <ul class="mobile-dropdowns-section d-block d-md-none">
-                <li class="mobile-dropdown bg-lightgrey">
-                    <h2>Market News</h2>
-                </li>
-                <li class="mobile-dropdown bg-lightgrey">
-                    <h2>Announcements</h2>
-                </li>
-                <li class="mobile-dropdown bg-orange">
-                    <h2>Recently Signed</h2>
-                </li>
-                <li class="mobile-dropdown bg-orange">
-                    <h2>Upcoming Events</h2>
-                </li>
-            </ul>
-        </div>
-    </div>
-</body>
-<footer>
-    <div class="skyline-section">
-        <div class="social-links desktop-only">
-            <span class="fab fa-google-plus"></span>
-            <span class="fab fa-twitter"></span>
-            <span class="fab fa-youtube"></span>
-            <ul class="links-list">
-                <li>feedback</li>
-                <li>support</li>
-                <li>company-group.com</li>
-            </ul>
-        </div>
-        <div class="skyline-image">
-            <img src="assets/minneapolis_skyline_5415.png" class="img-skyline" width="100%">
-        </div>
-    </div>
-    <div class="footer-divider bg-teal"></div>
-    <div class="footer-content bg-darkgrey">
-        <div class="footer-links-section">
-            <ul class="links-list mobile-only">
-                <li>feedback</li>
-                <li>support</li>
-                <li>company-group.com</li>
-            </ul>
-            <div class="social-links mobile-only">
-                <span class="fab fa-google-plus"></span>
-                <span class="fab fa-twitter"></span>
-                <span class="fab fa-youtube"></span>
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
+    <script type="text/javascript" src="RDTflex.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
 </html>
